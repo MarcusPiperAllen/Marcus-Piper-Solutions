@@ -1,0 +1,160 @@
+I want you to perform a controlled polish-and-upgrade pass on my existing website, not a full rebuild.
+
+Project goal:
+Transform the current site into a cleaner, more professional, more business-focused service website inspired by the structure and clarity of https://www.rankreallyhigh.com/, while preserving my dark theme, existing identity, and working functionality.
+
+Current live site:
+https://marcus-piper-solutions.replit.app/
+
+Core objective:
+Shift the site from “developer learning / portfolio feel” into a more polished “professional digital services site” for small businesses, while keeping the strongest working parts already in place.
+
+IMPORTANT RULES:
+1. Do NOT rebuild from scratch unless absolutely necessary.
+2. Reuse and improve existing working components whenever possible.
+3. Do NOT duplicate sections, components, carousels, cards, buttons, forms, or layouts that already exist.
+4. If a similar feature already exists, improve it instead of creating a second version.
+5. Preserve all working links, contact forms, project cards, and current functionality unless replacement is clearly necessary.
+6. Keep the dark theme and overall brand feel.
+7. Do NOT add unnecessary animations, libraries, frameworks, or experimental features.
+8. Do NOT break mobile responsiveness.
+9. Keep code clean, organized, and maintainable.
+10. If something is unclear, choose the option that improves clarity, trust, and business presentation without increasing clutter.
+
+POSITIONING:
+The site should clearly communicate that I build:
+- small business websites
+- e-commerce storefronts
+- website cleanup / redesigns
+- practical custom tools for businesses
+- automation / integrations
+
+However, do not make the site feel overloaded.
+Lead primarily with freelance services for small businesses and community-facing brands.
+Custom tools and automation should appear as secondary capabilities, not the main headline.
+
+DESIGN DIRECTION:
+Use Rank Really High only as inspiration for:
+- clearer homepage hierarchy
+- stronger service presentation
+- better business-facing structure
+- stronger CTA placement
+- a more confident agency-like feel
+
+Do NOT copy their branding, niche, colors, wording, or full page structure.
+Keep my site’s dark theme and make it feel like a boutique digital solutions site.
+
+HOMEPAGE GOALS:
+A visitor should understand within 5 seconds:
+- who I am
+- what I build
+- who I help
+- how to contact me
+
+REQUIRED CONTENT / STRUCTURE:
+Please improve the homepage structure so it flows like this:
+
+1. Hero section
+- Strong headline focused on websites, storefronts, and digital tools for small businesses
+- Supporting subtext explaining that I help turn ideas into clean, practical digital systems
+- Two clear CTA buttons:
+  - View Client Work
+  - Start a Project
+
+2. Services section
+Create or improve a services section with these service categories:
+- Small Business Websites
+- E-commerce Storefronts
+- Website Cleanup & Redesign
+- Custom Business Tools
+- Automation & Integrations
+
+If a services section already exists, improve it instead of duplicating it.
+
+3. Selected Client Work section
+Rename/reframe any “portfolio” style section into a more professional presentation such as:
+- Selected Client Work
+- Recent Builds
+- Featured Projects
+
+Use real existing projects already on the site where possible.
+Frame each one like client work, not student work.
+
+Suggested examples:
+- Rev. Dr. Doshie Piper — professional web presence for a public-facing leader
+- Netta McGee Creations — boutique storefront with checkout flow
+- Hope Heals / similar if already included and appropriate
+
+Do not overload this section. Keep it clean and selective.
+
+4. Process section
+Add or improve a simple “How I Work” / process section with something like:
+- Discover
+- Build
+- Refine
+- Launch
+
+If a similar section already exists, improve it instead of duplicating.
+
+5. Trust / Why Work With Me section
+Add a concise section that builds confidence without fake stats.
+Possible points:
+- real client builds
+- mobile-friendly design
+- clean business-focused workflows
+- ongoing support available
+
+Do not invent numbers, fake testimonials, or fake client logos.
+
+6. Contact section
+Keep the existing contact flow working.
+If a contact form already exists and works, preserve and improve the presentation instead of replacing it.
+Make the CTA feel more direct and professional.
+
+COPY DIRECTION:
+Do not use vague generic phrases like:
+- premium digital experiences
+- innovative solutions
+- cutting-edge everything
+
+Prefer clearer language that sounds confident and practical.
+
+The tone should be:
+- professional
+- direct
+- modern
+- credible
+- small-business friendly
+
+TECHNICAL RULES:
+- Audit existing components before changing anything
+- Reuse existing components where possible
+- Refactor rather than duplicate
+- Preserve responsiveness
+- Preserve accessibility where possible
+- Keep forms functional
+- Keep current routing functional
+- Avoid introducing broken imports or unused components
+- Avoid dead sections or placeholder content
+
+SPECIAL INSTRUCTION ABOUT DUPLICATES:
+Before creating any new section or component, first check whether an equivalent already exists.
+If it exists, improve or refactor it.
+Only create a new one if there is no suitable existing component to upgrade.
+
+IMPLEMENTATION PROCESS:
+Before making code changes, first give me a short implementation summary with these headings:
+- What will be kept
+- What will be improved
+- What will be removed
+- What will be added
+- Any risks to watch for
+
+Then make the changes.
+
+AFTER IMPLEMENTATION:
+Provide a summary of:
+- files changed
+- sections updated
+- any reused components
+- anything that was intentionally not changed to avoid breaking working functionality
