@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcus Piper – Digital Business Card</title>
+  <meta name="description" content="Digital business card for web developer Marcus Piper. Save contact, call, email, or request a free website review." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marcus Piper – Digital Business Card" />
+  <meta property="og:description" content="Web Developer for Small Businesses. Save my contact or request a free website review." />
+  <meta property="og:image" content="https://marcuspiperallen.github.io/Marcus_Hobby/images/hero-banner.jpg" />
+
+  <link rel="stylesheet" href="../style.css?v=1.1" />
+  <style>
+    .card-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card-container {
+      width: 100%;
+      max-width: 420px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: 0 16px 48px var(--glass-shadow), 0 0 30px rgba(6, 182, 212, 0.1);
+    }
+
+    .card-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-primary);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .card-header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .card-header .card-title {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .card-header .card-bio {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .card-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .card-section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-btn-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    .card-btn-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.9rem 0.5rem;
+      background: rgba(6, 182, 212, 0.08);
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      border-radius: var(--radius-sm);
+      color: var(--accent-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.8rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .card-btn:hover {
+      background: rgba(6, 182, 212, 0.18);
+      border-color: var(--accent-primary);
+      transform: translateY(-2px);
+    }
+
+    .card-btn-icon {
+      font-size: 1.4rem;
+    }
+
+    .card-btn-full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: rgba(6, 182, 212, 0.08);
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      border-radius: var(--radius-sm);
+      color: var(--accent-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      font-family: inherit;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-btn-full:hover {
+      background: rgba(6, 182, 212, 0.18);
+      border-color: var(--accent-primary);
+      transform: translateY(-2px);
+    }
+
+    .card-btn-full:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-btn-primary {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      color: white;
+      border-color: transparent;
+    }
+
+    .card-btn-primary:hover {
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.4);
+    }
+
+    .card-review-box {
+      background: rgba(6, 182, 212, 0.06);
+      border: 1px solid rgba(6, 182, 212, 0.15);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+
+    .card-review-box h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-review-box p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .card-qr {
+      text-align: center;
+    }
+
+    .card-qr canvas {
+      border-radius: var(--radius-sm);
+      margin: 0 auto;
+    }
+
+    .card-qr-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    .card-divider {
+      border: none;
+      border-top: 1px solid var(--glass-border);
+      margin: 1.5rem 0;
+    }
+
+    .card-toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--accent-primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    .card-toast.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .card-back-link {
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
+    .card-back-link:hover {
+      color: var(--accent-primary);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-page">
+    <div class="card-container">
+
+      <div class="card-header">
+        <img src="../images/marcus-linkedin-pic.jpg" alt="Marcus Piper" class="card-avatar" />
+        <h1>Marcus Piper</h1>
+        <p class="card-title">Web Developer for Small Businesses</p>
+        <p class="card-bio">I build websites, storefronts, and digital tools that help small businesses operate online.</p>
+      </div>
+
+      <hr class="card-divider" />
+
+      <div class="card-section">
+        <p class="card-section-title">Get in Touch</p>
+        <div class="card-btn-grid">
+          <a href="tel:+12103922392" class="card-btn">
+            <span class="card-btn-icon">📞</span>
+            Call
+          </a>
+          <a href="mailto:marcuspiperallen@gmail.com" class="card-btn">
+            <span class="card-btn-icon">📧</span>
+            Email
+          </a>
+          <a href="sms:+12103922392" class="card-btn">
+            <span class="card-btn-icon">💬</span>
+            Text
+          </a>
+        </div>
+      </div>
+
+      <div class="card-section">
+        <button class="card-btn-full card-btn-primary" onclick="saveContact()">
+          📥 Save Contact
+        </button>
+        <button class="card-btn-full" onclick="shareCard()">
+          🔗 Share Card
+        </button>
+        <button class="card-btn-full" onclick="copyLink()">
+          📋 Copy Link
+        </button>
+      </div>
+
+      <hr class="card-divider" />
+
+      <div class="card-section">
+        <p class="card-section-title">My Work</p>
+        <div class="card-btn-grid">
+          <a href="../index.html" class="card-btn">
+            <span class="card-btn-icon">🌐</span>
+            Website
+          </a>
+          <a href="https://www.linkedin.com/in/marcus-piper-87a6a61a9/" target="_blank" rel="noopener noreferrer" class="card-btn">
+            <span class="card-btn-icon">💼</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/MarcusPiperAllen" target="_blank" rel="noopener noreferrer" class="card-btn">
+            <span class="card-btn-icon">💻</span>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <hr class="card-divider" />
+
+      <div class="card-section">
+        <div class="card-review-box">
+          <h3>Free Website Review</h3>
+          <p>Want quick feedback on your website? Send me your business website and I'll record a short walkthrough showing what's working and what could improve.</p>
+          <a href="mailto:marcuspiperallen@gmail.com?subject=Free%20Website%20Review%20Request&body=Hi%20Marcus%2C%0A%0AI'd%20like%20to%20request%20a%20free%20website%20review.%0A%0AMy%20website%20URL%3A%20%0A%0AThanks!" class="card-btn-full card-btn-primary">
+            🔍 Request Free Website Review
+          </a>
+        </div>
+      </div>
+
+      <hr class="card-divider" />
+
+      <div class="card-section card-qr">
+        <p class="card-section-title">Scan to View Card</p>
+        <canvas id="qrcode"></canvas>
+        <p class="card-qr-label">Scan to save my card</p>
+      </div>
+
+      <a href="../index.html" class="card-back-link">← Back to main site</a>
+
+    </div>
+  </div>
+
+  <div class="card-toast" id="toast">Link copied!</div>
+
+  <script>
+    function saveContact() {
+      var vcard = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'N:Piper;Marcus;;;',
+        'FN:Marcus Piper',
+        'TEL;TYPE=CELL:+12103922392',
+        'EMAIL:marcuspiperallen@gmail.com',
+        'URL:' + window.location.origin + '/',
+        'TITLE:Web Developer',
+        'ORG:Marcus Piper Digital Services',
+        'END:VCARD'
+      ].join('\n');
+
+      var blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'Marcus_Piper.vcf';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function shareCard() {
+      var shareUrl = window.location.href;
+      if (navigator.share) {
+        navigator.share({
+          title: 'Marcus Piper – Web Developer',
+          text: 'Check out Marcus Piper\'s digital business card. Web developer for small businesses.',
+          url: shareUrl
+        });
+      } else {
+        copyToClipboard(shareUrl);
+      }
+    }
+
+    function copyLink() {
+      copyToClipboard(window.location.href);
+    }
+
+    function copyToClipboard(text) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(function() {
+          showToast('Link copied!');
+        });
+      } else {
+        var input = document.createElement('input');
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        showToast('Link copied!');
+      }
+    }
+
+    function showToast(msg) {
+      var toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('visible');
+      setTimeout(function() {
+        toast.classList.remove('visible');
+      }, 2000);
+    }
+
+    (function() {
+      var img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = function() {
+        var canvas = document.getElementById('qrcode');
+        canvas.width = 180;
+        canvas.height = 180;
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, 180, 180);
+      };
+      img.onerror = function() {
+        var canvas = document.getElementById('qrcode');
+        canvas.width = 180;
+        canvas.height = 180;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#1e293b';
+        ctx.fillRect(0, 0, 180, 180);
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = '14px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('QR Code', 90, 85);
+        ctx.fillText('Scan at link below', 90, 105);
+      };
+      img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(window.location.href) + '&bgcolor=0f172a&color=06b6d4&format=png';
+    })();
+  </script>
+</body>
+
+</html>

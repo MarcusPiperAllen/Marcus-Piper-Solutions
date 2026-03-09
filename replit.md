@@ -2,7 +2,7 @@
 
 ## Overview
 
-A professional digital services website for web developer Marcus Piper, positioned as a boutique agency serving small businesses, community leaders, and local brands. Built with vanilla HTML5, CSS3, and JavaScript, featuring a dark navy (#0f172a) theme with glassmorphism effects and teal (#06b6d4) accents. The site includes three pages: home (services, client work, process, trust), projects (solutions showcase with video previews), and about (bento-timeline with contact form).
+A professional digital services website for web developer Marcus Piper, positioned as a boutique agency serving small businesses, community leaders, and local brands. Built with vanilla HTML5, CSS3, and JavaScript, featuring a dark navy (#0f172a) theme with glassmorphism effects and teal (#06b6d4) accents. The site includes four pages: home (services, client work, process, trust), projects (solutions showcase with video previews), about (bento-timeline with contact form), and card (shareable digital business card).
 
 ## User Preferences
 
@@ -18,6 +18,7 @@ Preferred communication style: Simple, everyday language.
   - `index.html` - Home page with services, selected client work (bento grid), process, trust, and CTA sections
   - `projects/index.html` - Solutions showcase with video previews of client work
   - `about/index.html` - About page with bento-timeline layout, profile photo, and contact form
+  - `card/index.html` - Shareable digital business card with contact buttons, vCard download, QR code, and lead generation form
 
 ### Homepage Sections (in order)
 1. **Hero Banner** - Virginia skyline with glassmorphism badge
@@ -38,7 +39,7 @@ Preferred communication style: Simple, everyday language.
 ### Deployment Strategy
 - **Primary Hosting**: GitHub Pages (static site hosting)
 - **Secondary Hosting**: Replit for development and preview
-- **URL Structure**: Directory-based URLs (`/projects/`, `/about/`) with relative paths for GitHub Pages
+- **URL Structure**: Directory-based URLs (`/projects/`, `/about/`, `/card/`) with relative paths for GitHub Pages
 - **GitHub Sync**: Push via `git push https://MarcusPiperAllen:$GITHUB_TOKEN@github.com/MarcusPiperAllen/Marcus_Hobby.git main`
 - **GitHub Token**: Stored in Replit Secrets as `GITHUB_TOKEN`
 
@@ -57,6 +58,7 @@ Preferred communication style: Simple, everyday language.
 - **Google Analytics**: GA4 integration prepared (placeholder `G-XXXXXXXXXX`)
 - **Google Fonts**: Inter and Montserrat font families via CDN
 - **Formspree**: Contact form submission (placeholder endpoint — needs real ID)
+- **QR Server API**: Generates QR codes for the digital business card (public, no auth)
 
 ### Hosting Platforms
 - **GitHub Pages**: Primary production at `https://marcuspiperallen.github.io/Marcus_Hobby/`
