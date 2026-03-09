@@ -629,6 +629,23 @@ nav ul li a.active {
   transform: translateX(3px);
 }
 
+.bento-tile-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.bento-tile-link-secondary {
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+.bento-tile-link-secondary:hover {
+  color: var(--accent-primary);
+  opacity: 1;
+}
+
 /* Bento Tile Video */
 .bento-tile-video {
   margin-bottom: 1rem;

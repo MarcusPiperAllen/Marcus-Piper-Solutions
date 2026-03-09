@@ -1,0 +1,131 @@
+Perform a small polish pass on the existing website without rebuilding or restructuring the entire site.
+
+Live site reference:
+https://marcus-piper-solutions.replit.app/index.html
+
+IMPORTANT RULES
+- Do NOT rebuild the site
+- Do NOT change frameworks
+- Do NOT change the dark theme
+- Do NOT break any existing working functionality
+- Reuse existing components wherever possible
+- Do NOT duplicate sections or create unnecessary components
+- Only make the specific improvements listed below
+
+OBJECTIVE
+Improve clarity, navigation, and project links so the site feels more like a professional service site.
+
+--------------------------------------------------
+
+1. NAVIGATION IMPROVEMENT
+
+Current nav:
+Home | Projects | About
+
+Update navigation to:
+
+Home  
+Services  
+Work  
+About  
+Contact
+
+Rules:
+- Services should scroll to the “What I Build” section
+- Work should scroll to “Selected Client Work”
+- Contact should scroll to the contact section or form
+- Keep smooth scrolling behavior if already implemented
+
+--------------------------------------------------
+
+2. PROJECT BUTTON FIX
+
+In the "Selected Client Work" section:
+
+Current button text:
+"View Project Details"
+
+Replace with clearer actions.
+
+For external projects:
+Use:
+"Visit Live Site"
+
+For internal pages:
+Use:
+"View Project"
+
+If both project cards currently link to the same anchor (#projects), improve this so each project card can optionally link to:
+- a live site
+OR
+- a future case-study page
+
+Do NOT break existing links.
+
+--------------------------------------------------
+
+3. SERVICES SECTION CLARITY
+
+In the "What I Build" section:
+
+Ensure the five service cards remain:
+
+• Small Business Websites  
+• E-commerce Storefronts  
+• Website Cleanup & Redesign  
+• Custom Business Tools  
+• Automation & Integrations  
+
+Polish spacing and consistency if needed but DO NOT change layout drastically.
+
+--------------------------------------------------
+
+4. CTA BUTTON CLEANUP
+
+Ensure the main call-to-action buttons use clear language:
+
+Primary CTA:
+"Start a Project"
+
+Secondary CTA:
+"View Client Work"
+
+If duplicates exist, reuse existing buttons rather than creating new ones.
+
+--------------------------------------------------
+
+5. CHATBOT POSITION CHECK
+
+The chatbot should remain visible but secondary.
+
+Rules:
+- Keep it functional
+- Ensure it does not overlap main CTAs on mobile
+- Adjust spacing if necessary
+
+--------------------------------------------------
+
+6. CODE CLEANUP
+
+While making these changes:
+
+- Remove any unused components or duplicate imports
+- Keep file structure organized
+- Preserve responsive behavior
+- Ensure no console errors appear
+
+--------------------------------------------------
+
+IMPLEMENTATION PROCESS
+
+Before making code changes, provide a short summary including:
+
+• Files that will be modified  
+• Navigation updates  
+• Project button changes  
+• Any potential risk of breaking links
+
+After confirmation, apply the changes.
+
+Success means:
+The site remains visually the same but navigation, project links, and CTAs feel clearer and more professional.
