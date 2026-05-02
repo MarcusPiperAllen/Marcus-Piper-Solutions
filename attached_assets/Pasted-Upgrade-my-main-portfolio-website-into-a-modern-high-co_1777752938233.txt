@@ -1,0 +1,115 @@
+Upgrade my main portfolio website into a modern, high-conversion website for Marcus Piper Solutions.
+
+Current site:
+https://marcus-piper-solutions.replit.app/index.html
+
+Do not rebuild from scratch unless absolutely necessary. Improve the current site structure, design, copy, and project presentation.
+
+Goal:
+Make the site attract small business owners, local service providers, nonprofits, and people who need websites, automation tools, or custom digital systems.
+
+Brand position:
+Marcus Piper Solutions builds practical digital tools, websites, and automation systems for real-world problems.
+
+Design direction:
+- Professional, modern, Apple-clean
+- Soft cream/white background
+- Charcoal/dark text
+- Emerald or blue accent color
+- Smooth spacing
+- Mobile-first
+- Bento-grid project cards
+- Clean typography
+- Subtle hover effects
+- No clutter
+
+Required sections:
+
+1. Hero Section
+Create a strong headline:
+“Websites, tools, and automation systems built for real-world problems.”
+
+Subheadline:
+“I help small businesses, nonprofits, and local operators turn ideas into working digital systems — from websites to SMS tools to community apps.”
+
+CTA buttons:
+- “Start a Project”
+- “View My Work”
+
+2. Services Section
+Show 3 clear service cards:
+- Business Websites
+- Automation & SMS Tools
+- Custom Web Apps
+
+Each card should explain the value in plain language.
+
+3. Featured Projects Section
+Use a modern bento grid to showcase:
+- WasteNot Alexandria — community grocery deal app
+- CurveLink — SMS alert system for apartment/community updates
+- LaunchFrame — website planning generator
+- ShowcaseFlow — project showcase generator
+- Southern Charm BBQ & Catering — client website draft
+
+Each project card should include:
+- Problem solved
+- What was built
+- Status badge
+- Live link if available
+
+Known links:
+WasteNot Alexandria: https://wastenot.replit.app/
+Southern Charm BBQ: https://southern-cha.replit.app/
+CurveLink: https://curve-link.replit.app/
+LaunchFrame and ShowcaseFlow can use placeholder links if needed.
+
+4. Workflow Section
+Explain my process:
+- Discover the problem
+- Plan the system
+- Build a working version fast
+- Test on mobile
+- Improve based on feedback
+
+Mention that I use AI-assisted development workflows with Replit, ChatGPT, and Gemini to move quickly while keeping projects structured.
+
+5. About Section
+Position me as a practical builder with experience in:
+- web development
+- operations
+- underground utilities / field management
+- school and continuous learning
+- real-world problem solving
+
+Keep it professional and confident, not too long.
+
+6. Contact Section
+Create a clear contact area for potential clients:
+- Name
+- Email
+- Project type
+- Message
+- Button text: “Send Project Request”
+
+If a backend is not already configured, keep the form front-end only and add a clear comment where form handling should be connected later.
+
+7. Footer
+Include:
+- Marcus Piper Solutions
+- Website / Tools / Automation
+- GitHub link placeholder
+- LinkedIn link placeholder
+- Copyright 2026
+
+Technical requirements:
+- Keep the site responsive
+- Keep code clean and organized
+- Use semantic HTML
+- Use CSS variables
+- Do not add unnecessary libraries
+- Do not add login, database, payments, or backend
+- Do not break existing links
+- Make sure it looks excellent on phone
+
+After upgrading, summarize what changed and list any placeholder links or form connections that still need my attention.
