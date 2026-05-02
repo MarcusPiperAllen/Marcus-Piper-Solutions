@@ -36,7 +36,7 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
 
-  <link rel="stylesheet" href="../style.css?v=1.1" />
+  <link rel="stylesheet" href="../style.css?v=2.0" />
 </head>
 
 <body>
@@ -50,6 +50,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../projects/">Projects</a></li>
         <li><a href="./" class="active">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -149,6 +150,10 @@
     <section class="about-contact" id="contact-form">
       <h2>Let's Build Something Together</h2>
       <p>Ready to discuss your project? Reach out and let's talk about how I can help.</p>
+      <!--
+        TODO: Replace placeholder Formspree endpoint with a real one
+        (or swap to your own backend handler).
+      -->
       <form id="contact-form-main" action="https://formspree.io/f/xjgewzkp" method="POST" class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
@@ -163,10 +168,23 @@
           <input type="tel" id="phone" name="phone">
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="project-type">Project Type</label>
+          <select id="project-type" name="project_type" required>
+            <option value="">Select a project type…</option>
+            <option value="business-website">Business Website</option>
+            <option value="ecommerce">E-Commerce Storefront</option>
+            <option value="web-app">Custom Web App or Tool</option>
+            <option value="automation-sms">Automation / SMS System</option>
+            <option value="cleanup-redesign">Website Cleanup or Redesign</option>
+            <option value="integration">Integration / API Work</option>
+            <option value="other">Something Else</option>
+          </select>
         </div>
-        <button type="submit" class="submit-button" id="submit-btn">Send Message</button>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me what you're trying to build or fix." required></textarea>
+        </div>
+        <button type="submit" class="submit-button" id="submit-btn">Send Project Request</button>
       </form>
       <div id="form-success" class="form-message form-success-message" style="display: none;">
         <p>✅ Thanks! Your message was sent.</p>
@@ -224,14 +242,16 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Marcus Piper</p>
+    <p><strong>Marcus Piper Solutions</strong> &nbsp;·&nbsp; Websites · Tools · Automation</p>
     <div class="footer-links">
       <a href="https://github.com/MarcusPiperAllen" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/marcus-piper-87a6a61a9/" target="_blank">LinkedIn</a>
-      <a href="#contact-form">Contact Me</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../card/">Digital Card</a>
     </div>
-    <p class="footer-tagline">Websites and digital tools for small businesses.</p>
+    <p class="footer-tagline">&copy; <span id="about-current-year"></span> Marcus Piper Solutions. Built in Virginia.</p>
   </footer>
+  <script>document.getElementById('about-current-year').textContent = new Date().getFullYear();</script>
 
   <!-- Smart Interaction Card -->
   <button class="chatbot-button" id="chatbot-button"
