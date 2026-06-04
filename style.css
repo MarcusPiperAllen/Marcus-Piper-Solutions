@@ -545,6 +545,16 @@ nav ul li a.active {
   border: 2px solid var(--glass-border);
 }
 
+.bento-tile-third .bento-tile-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  border: 1px solid var(--glass-border);
+}
+
 .bento-tile-small h3 {
   font-size: 1.1rem;
   color: var(--accent-primary);
