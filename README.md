@@ -96,7 +96,8 @@ After pushing to GitHub, follow the "Syncing Updates" steps above to pull change
 ## 📝 Featured Projects
 
 1. **Rev. Dr. Doshie Piper** — Five-page website for UIW professor and community leader
-2. **Netta McGee Creations** — High-performance e-commerce boutique platform
+2. **Hope Heals SA** — Live nonprofit website with ongoing training and ownership handoff support
+3. **CurveLink** — Self-initiated functional SMS alert prototype
 
 ## 🔧 Local Development
 
