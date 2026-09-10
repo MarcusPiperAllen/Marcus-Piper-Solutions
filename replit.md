@@ -31,12 +31,12 @@ Preferred communication style: Simple, everyday language.
 3. **Hero Section** — Headline "Websites, tools, and automation systems built for real-world problems." + dual CTA
 4. **Value Bar** — Soft gradient tagline
 5. **Services** — 5 cards (Business Websites & E-Commerce, Custom Web Apps & Tools, Automation & SMS Systems, Website Cleanup & Redesign, Integrations & APIs)
-6. **Featured Projects** — Bento grid with 7 tiles, each with status badge (Live/Beta/Draft) and problem statement:
+6. **Featured Projects** — Bento grid with status badges and honest project-state labels:
    - Rev. Dr. Doshie Piper (large, video preview, Live)
-   - Netta McGee Creations (medium, video preview, Live)
-   - WasteNot Alexandria (third, Live)
-   - CurveLink (third, Beta)
-   - Southern Charm BBQ (third, Draft)
+   - Hope Heals SA (medium, Live)
+   - WasteNot Alexandria (third, Archived)
+   - CurveLink (third, Functional Prototype)
+   - Southern Charm BBQ (third, Archived)
    - LaunchFrame (half, Beta)
    - ShowcaseFlow (half, Beta)
 7. **How I Work** — 5-step process (Discover, Plan, Build Fast, Test on Mobile, Improve) with note about AI-assisted dev (Replit, ChatGPT, Gemini)
@@ -54,12 +54,10 @@ Preferred communication style: Simple, everyday language.
 - **Inline form handler** (in index.html and about/index.html): Async fetch to Formspree with success/error UI
 
 ### Deployment Strategy
-- **Primary Hosting**: GitHub Pages (static site hosting)
-- **Secondary Hosting**: Replit Static Deployment (configured, public dir = ".")
-- **URL Structure**: Directory-based URLs (`/projects/`, `/about/`, `/card/`) with relative paths for GitHub Pages
-- **GitHub Sync**: Push via `git push https://MarcusPiperAllen:$GITHUB_TOKEN@github.com/MarcusPiperAllen/Marcus_Hobby.git main`
-- **GitHub Token**: Stored in Replit Secrets as `GITHUB_TOKEN`
-- **Replit Deployment**: Published at `marcus-piper-solutions.replit.app`
+- **Primary Hosting**: Vercel at `https://marcus-piper-solutions-site.vercel.app/`
+- **Source Repository**: `https://github.com/MarcusPiperAllen/Marcus-Piper-Solutions`
+- **URL Structure**: Directory-based URLs (`/projects/`, `/about/`, `/card/`) with relative paths for static hosting
+- **Deployment Flow**: Push the `main` branch to GitHub; the linked Vercel project publishes the update
 
 ### Design Decisions
 - **No Build Process**: Chosen for simplicity and ease of maintenance; all files are served directly
@@ -74,13 +72,13 @@ Preferred communication style: Simple, everyday language.
 - **Directory-Based URLs**: Pages stored as `folder/index.html` for clean URLs on static hosting
 - **Version Cache Busting**: CSS and JS files include `?v=2.0` query parameters
 
-## Featured Projects (live URLs)
+## Featured Projects (current URLs)
 
-- **Rev. Dr. Doshie Piper** — https://marcuspiperallen.github.io/rev-dr-doshie-piper-site/
-- **Netta McGee Creations** — https://netta-mcgee-creations.netlify.app/#product-grid
-- **WasteNot Alexandria** — https://wastenot.replit.app/
-- **CurveLink** — https://curve-link.replit.app/
-- **Southern Charm BBQ** — https://southern-cha.replit.app/
+- **Rev. Dr. Doshie Piper** — https://drdoshiepiper.com/
+- **Hope Heals SA** — https://hopehealssa.org/
+- **CurveLink** — https://curvelink-marcus-piper-solutions.vercel.app/ (functional prototype)
+- **WasteNot Alexandria** — archived; no public link promoted
+- **Southern Charm BBQ** — archived; no public link promoted
 - **LaunchFrame** — internal tool, beta (no public URL yet)
 - **ShowcaseFlow** — internal tool, beta (no public URL yet)
 
@@ -94,9 +92,9 @@ Preferred communication style: Simple, everyday language.
 - **QR Server API**: Generates QR codes for the digital business card (public, no auth)
 
 ### Hosting Platforms
-- **GitHub Pages**: Primary production at `https://marcuspiperallen.github.io/Marcus_Hobby/`
-- **Replit Static Deployment**: `marcus-piper-solutions.replit.app`
-- **Replit Workspace**: Development environment with live preview via `python -m http.server 5000`
+- **Vercel**: Production at `https://marcus-piper-solutions-site.vercel.app/`
+- **GitHub**: Source repository at `https://github.com/MarcusPiperAllen/Marcus-Piper-Solutions`
+- **Local preview**: Static development preview via `python -m http.server 5000`
 
 ### Contact
 - **Email**: marcuspiperallen@gmail.com

@@ -60,11 +60,11 @@ git log --oneline -5
 - `style.css`, `toggle.js`
 
 **All External Links:** Absolute URLs ✅
-- Project URLs (Dr. Piper, Netta McGee)
+- Project URLs (Dr. Doshie Piper, Hope Heals SA, CurveLink)
 - Social media (GitHub, LinkedIn)
 - External resources (Google Fonts)
 
-**Result:** Works on local, GitHub Pages, Replit, anywhere!
+**Result:** Works locally and on the current Vercel deployment.
 
 ---
 
