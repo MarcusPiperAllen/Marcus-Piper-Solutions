@@ -337,12 +337,12 @@
     <section class="home-contact" id="contact">
       <span class="section-kicker">Let's Talk</span>
       <h2>Send a Project Request</h2>
-      <p>Fill out a few details and I'll get back to you within one business day.</p>
-      <!--
-        TODO: Connect this form to a backend.
-        Currently submits to a placeholder Formspree endpoint —
-        replace the action URL with your real Formspree (or other) form ID.
-      -->
+      <p>
+        Fill out a few details and I'll get back to you within one business day.
+        Prefer email? Write to
+        <a href="mailto:marcus@marcuspipersolutions.com">marcus@marcuspipersolutions.com</a>.
+      </p>
+      <!-- Contact submissions are handled by the MPS Formspree form. -->
       <form id="home-contact-form" action="https://formspree.io/f/xjgewzkp" method="POST" class="contact-form">
         <div class="form-group">
           <label for="contact-name">Name</label>
@@ -375,7 +375,11 @@
         <p>✅ Thanks! Your project request was sent. I'll be in touch within one business day.</p>
       </div>
       <div id="contact-error" class="form-message form-error-message" style="display: none;">
-        <p>⚠️ Something went wrong. Please try again or email marcuspiperallen@gmail.com directly.</p>
+        <p>
+          ⚠️ Something went wrong. Please try again or email
+          <a href="mailto:marcus@marcuspipersolutions.com">marcus@marcuspipersolutions.com</a>
+          directly.
+        </p>
       </div>
       <script>
         document.getElementById('home-contact-form').addEventListener('submit', function (e) {

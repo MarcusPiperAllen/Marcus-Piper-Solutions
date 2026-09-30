@@ -121,7 +121,7 @@ After pushing to GitHub, follow the "Syncing Updates" steps above to pull change
 
 ## 📧 Contact
 
-- **Email**: marcuspiperallen@gmail.com
+- **Email**: marcus@marcuspipersolutions.com
 - **GitHub**: [@MarcusPiperAllen](https://github.com/MarcusPiperAllen)
 - **LinkedIn**: [Marcus Piper](https://www.linkedin.com/in/marcus-piper-87a6a61a9/)
 

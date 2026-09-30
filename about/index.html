@@ -150,10 +150,7 @@
     <section class="about-contact" id="contact-form">
       <h2>Let's Build Something Together</h2>
       <p>Ready to discuss your project? Reach out and let's talk about how I can help.</p>
-      <!--
-        TODO: Replace placeholder Formspree endpoint with a real one
-        (or swap to your own backend handler).
-      -->
+      <!-- Contact submissions are handled by the MPS Formspree form. -->
       <form id="contact-form-main" action="https://formspree.io/f/xjgewzkp" method="POST" class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
@@ -190,7 +187,11 @@
         <p>✅ Thanks! Your message was sent.</p>
       </div>
       <div id="form-error" class="form-message form-error-message" style="display: none;">
-        <p>⚠️ Something went wrong. Please try again.</p>
+        <p>
+          ⚠️ Something went wrong. Please try again or email
+          <a href="mailto:marcus@marcuspipersolutions.com">marcus@marcuspipersolutions.com</a>
+          directly.
+        </p>
       </div>
       <script>
         document.getElementById('contact-form-main').addEventListener('submit', function (e) {

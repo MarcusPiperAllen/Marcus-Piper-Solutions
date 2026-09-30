@@ -97,7 +97,7 @@ Preferred communication style: Simple, everyday language.
 - **Local preview**: Static development preview via `python -m http.server 5000`
 
 ### Contact
-- **Email**: marcuspiperallen@gmail.com
+- **Email**: marcus@marcuspipersolutions.com
 - **Phone**: 210-392-2392
 - **LinkedIn**: https://www.linkedin.com/in/marcus-piper-87a6a61a9/
 - **GitHub**: https://github.com/MarcusPiperAllen
