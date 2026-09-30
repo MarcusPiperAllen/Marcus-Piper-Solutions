@@ -910,6 +910,86 @@ nav ul li a.active {
   margin-top: 3rem;
 }
 
+/* === CLIENT TESTIMONIAL === */
+.client-testimonial {
+  position: relative;
+  max-width: 980px;
+  margin: 3rem auto 0;
+  padding: 2.5rem 3rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.09), rgba(37, 99, 235, 0.05));
+  border: 1px solid rgba(5, 150, 105, 0.2);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+}
+
+.client-testimonial::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.75rem;
+  right: 1.5rem;
+  font-family: Georgia, serif;
+  font-size: 10rem;
+  line-height: 1;
+  color: rgba(5, 150, 105, 0.1);
+  pointer-events: none;
+}
+
+.testimonial-kicker {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.client-testimonial blockquote {
+  position: relative;
+  z-index: 1;
+}
+
+.client-testimonial blockquote p {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.testimonial-attribution {
+  margin-top: 1.5rem;
+}
+
+.client-testimonial cite {
+  font-style: normal;
+  font-weight: 800;
+}
+
+.client-testimonial cite a {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.client-testimonial cite a:hover {
+  color: var(--accent-secondary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .client-testimonial {
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .client-testimonial::before {
+    right: 0.5rem;
+    font-size: 7rem;
+  }
+}
+
 /* === HERO SPLIT FOR PAGE2 === */
 .media-section {
   padding: var(--spacing-lg) var(--spacing-md);
@@ -2284,6 +2364,7 @@ section[id],
 [id="contact"],
 [id="services"],
 [id="projects"],
+[id="client-testimonial"],
 [id="process"],
 [id="about"] {
   scroll-margin-top: 220px;
