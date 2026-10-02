@@ -963,6 +963,10 @@ nav ul li a.active {
   margin-top: 1.5rem;
 }
 
+.client-testimonial + .client-testimonial {
+  margin-top: 1.5rem;
+}
+
 .client-testimonial cite {
   font-style: normal;
   font-weight: 800;
@@ -2365,6 +2369,7 @@ section[id],
 [id="services"],
 [id="projects"],
 [id="client-testimonial"],
+[id="client-testimonial-hope-heals"],
 [id="process"],
 [id="about"] {
   scroll-margin-top: 220px;
