@@ -4,7 +4,6 @@
    =================================== */
 
 /* Google Fonts - Inter & Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 /* === CSS VARIABLES === */
 :root {
@@ -2445,4 +2444,42 @@ section[id],
 
 .form-privacy-note a {
   color: var(--accent-primary);
+}
+
+/* === CONTRAST FIXES (Oct 2026): meet WCAG AA 4.5:1 for text === */
+:root {
+  --accent-primary: #047857;
+  --text-muted: #5b6474;
+  --accent-blue: #1d4ed8;
+}
+
+.solution-badge,
+.philosophy-badge {
+  color: var(--accent-primary);
+}
+
+.process-number {
+  opacity: 1;
+}
+
+/* The Journey heading sits on a dark photo overlay */
+.journey-content h2 {
+  color: #ffffff;
+}
+
+/* Dark "Have a problem worth solving?" box: light text */
+.final-cta-section p {
+  color: rgba(241, 245, 249, 0.9);
+}
+
+.card-legal {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
+.card-legal a {
+  color: var(--text-muted);
+  text-decoration: underline;
 }
