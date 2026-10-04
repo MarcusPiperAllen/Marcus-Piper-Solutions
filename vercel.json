@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.marcuspipersolutions.com" }],
+      "destination": "https://marcuspipersolutions.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "marcus-piper-solutions-site.vercel.app" }],
+      "destination": "https://marcuspipersolutions.com/:path*",
+      "permanent": true
+    }
+  ]
+}

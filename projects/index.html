@@ -10,33 +10,23 @@
     content="Featured projects from Marcus Piper Solutions: client websites, community web apps, SMS systems, and internal tools.">
 
   <!-- Open Graph / Facebook -->
+  <link rel="canonical" href="https://marcuspipersolutions.com/projects/" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://marcus-piper-solutions-site.vercel.app/projects/" />
+  <meta property="og:url" content="https://marcuspipersolutions.com/projects/" />
   <meta property="og:title" content="Projects — Marcus Piper Solutions" />
   <meta property="og:description"
     content="Featured projects from Marcus Piper Solutions: client websites, community web apps, SMS systems, and internal tools." />
-  <meta property="og:image" content="https://marcus-piper-solutions-site.vercel.app/images/hero-banner.jpg" />
+  <meta property="og:image" content="https://marcuspipersolutions.com/images/hero-banner.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://marcus-piper-solutions-site.vercel.app/projects/" />
+  <meta property="twitter:url" content="https://marcuspipersolutions.com/projects/" />
   <meta property="twitter:title" content="Projects — Marcus Piper Solutions" />
   <meta property="twitter:description"
     content="Featured projects from Marcus Piper Solutions: client websites, community web apps, SMS systems, and internal tools." />
-  <meta property="twitter:image" content="https://marcus-piper-solutions-site.vercel.app/images/hero-banner.jpg" />
+  <meta property="twitter:image" content="https://marcuspipersolutions.com/images/hero-banner.jpg" />
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <link rel="stylesheet" href="../style.css?v=2.0">
+  <link rel="stylesheet" href="../style.css?v=2.1">
 </head>
 
 <body>
@@ -177,13 +167,13 @@
       <a href="../index.html#contact">Contact</a>
       <a href="../card/">Digital Card</a>
     </div>
-    <p class="footer-tagline">&copy; <span id="current-year"></span> Marcus Piper Solutions. Built in Virginia.</p>
+    <p class="footer-tagline">&copy; <span id="current-year"></span> Marcus Piper Solutions LLC. Serving Alexandria, Northern Virginia, and Washington, DC. &middot; <a href="../privacy/">Privacy</a></p>
   </footer>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
   <!-- Smart Interaction Card -->
   <button class="chatbot-button" id="chatbot-button"
-    onclick="document.getElementById('smart-card').classList.toggle('active');">Chat with Marcus</button>
+    onclick="document.getElementById('smart-card').classList.toggle('active');" aria-label="Chat with Marcus">Chat with Marcus</button>
 
   <div class="smart-card" id="smart-card">
     <p class="smart-card-greeting">Hey! I'm Marcus. I build practical digital tools from Virginia. What's on your mind?</p>

@@ -9,34 +9,23 @@
     content="Marcus Piper Solutions builds practical websites, automation systems, and custom web apps for small businesses, nonprofits, and local operators." />
 
   <!-- Open Graph / Facebook -->
+  <link rel="canonical" href="https://marcuspipersolutions.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://marcus-piper-solutions-site.vercel.app/" />
+  <meta property="og:url" content="https://marcuspipersolutions.com/" />
   <meta property="og:title" content="Marcus Piper Solutions — Practical Digital Systems" />
   <meta property="og:description"
     content="Websites, automation systems, and custom tools built for small businesses, nonprofits, and local operators." />
-  <meta property="og:image" content="https://marcus-piper-solutions-site.vercel.app/images/hero-banner.jpg" />
+  <meta property="og:image" content="https://marcuspipersolutions.com/images/hero-banner.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://marcus-piper-solutions-site.vercel.app/" />
+  <meta property="twitter:url" content="https://marcuspipersolutions.com/" />
   <meta property="twitter:title" content="Marcus Piper Solutions — Practical Digital Systems" />
   <meta property="twitter:description"
     content="Websites, automation systems, and custom tools built for small businesses, nonprofits, and local operators." />
-  <meta property="twitter:image" content="https://marcus-piper-solutions-site.vercel.app/images/hero-banner.jpg" />
+  <meta property="twitter:image" content="https://marcuspipersolutions.com/images/hero-banner.jpg" />
 
-  <!-- TODO: Replace G-XXXXXXXXXX with my real GA4 Measurement ID once created -->
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <link rel="stylesheet" href="style.css?v=2.0" />
+  <link rel="stylesheet" href="style.css?v=2.1" />
   <script defer src="chat.js?v=1.1"></script>
 </head>
 
@@ -90,7 +79,7 @@
     <section class="services-section" id="services">
       <span class="section-kicker">What I Build</span>
       <h2>Services</h2>
-      <p class="section-subtitle">Five focused offerings. Each one is built around solving a real problem your business actually has.</p>
+      <p class="section-subtitle">Six focused offerings. Each one is built around solving a real problem your business actually has.</p>
       <div class="services-grid">
         <div class="service-card glass-card">
           <div class="service-icon">🌐</div>
@@ -259,7 +248,7 @@
     <section class="process-section" id="process">
       <span class="section-kicker">My Workflow</span>
       <h2>How I Work</h2>
-      <p class="section-subtitle">A real process, not a sales pitch. AI-assisted (Replit, ChatGPT, Gemini) so I can move fast while keeping every project structured.</p>
+      <p class="section-subtitle">A real process, not a sales pitch. AI-assisted (Claude, ChatGPT, Gemini) so I can move fast while keeping every project structured.</p>
       <div class="process-grid">
         <div class="process-step glass-card">
           <span class="process-number">01</span>
@@ -329,7 +318,7 @@
     <section class="home-about" id="about">
       <span class="section-kicker">About Me</span>
       <div class="home-about-grid">
-        <img src="images/marcus-linkedin-pic.jpg" alt="Marcus Piper" class="home-about-photo" />
+        <img src="images/marcus-headshot.jpg" alt="Marcus Piper" class="home-about-photo" />
         <div class="home-about-content">
           <span class="home-about-tagline">Practical Builder</span>
           <h2>I build things that work in the real world.</h2>
@@ -391,6 +380,7 @@
         </div>
         <button type="submit" class="submit-button" id="contact-submit-btn">Send Project Request</button>
       </form>
+      <p class="form-privacy-note">I only use what you send here to reply to you. Messages are delivered through Formspree, and I never sell or share your information. <a href="./privacy/">Privacy</a></p>
       <div id="contact-success" class="form-message form-success-message" style="display: none;">
         <p>✅ Thanks! Your project request was sent. I'll be in touch within one business day.</p>
       </div>
@@ -448,13 +438,13 @@
       <a href="#contact">Contact</a>
       <a href="./card/">Digital Card</a>
     </div>
-    <p class="footer-tagline">&copy; <span id="current-year"></span> Marcus Piper Solutions. Built in Virginia.</p>
+    <p class="footer-tagline">&copy; <span id="current-year"></span> Marcus Piper Solutions LLC. Serving Alexandria, Northern Virginia, and Washington, DC. &middot; <a href="./privacy/">Privacy</a></p>
   </footer>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
   <!-- Smart Interaction Card -->
   <button class="chatbot-button" id="chatbot-button"
-    onclick="document.getElementById('smart-card').classList.toggle('active');">Chat with Marcus</button>
+    onclick="document.getElementById('smart-card').classList.toggle('active');" aria-label="Chat with Marcus">Chat with Marcus</button>
 
   <div class="smart-card" id="smart-card">
     <p class="smart-card-greeting">Hey! I'm Marcus. I build practical digital tools from Virginia. What's on your mind?</p>

@@ -10,33 +10,23 @@
     content="Learn more about web developer Marcus Piper, his journey, philosophy, and approach to building practical digital solutions.">
 
   <!-- Open Graph / Facebook -->
+  <link rel="canonical" href="https://marcuspipersolutions.com/about/" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://marcus-piper-solutions-site.vercel.app/about/" />
+  <meta property="og:url" content="https://marcuspipersolutions.com/about/" />
   <meta property="og:title" content="About – Marcus Piper, Web Developer" />
   <meta property="og:description"
     content="Learn more about web developer Marcus Piper, his journey, philosophy, and approach to building practical digital solutions." />
-  <meta property="og:image" content="https://marcus-piper-solutions-site.vercel.app/images/hero-banner.jpg" />
+  <meta property="og:image" content="https://marcuspipersolutions.com/images/hero-banner.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://marcus-piper-solutions-site.vercel.app/about/" />
+  <meta property="twitter:url" content="https://marcuspipersolutions.com/about/" />
   <meta property="twitter:title" content="About – Marcus Piper, Web Developer" />
   <meta property="twitter:description"
     content="Learn more about web developer Marcus Piper, his journey, philosophy, and approach to building practical digital solutions." />
-  <meta property="twitter:image" content="https://marcus-piper-solutions-site.vercel.app/images/hero-banner.jpg" />
+  <meta property="twitter:image" content="https://marcuspipersolutions.com/images/hero-banner.jpg" />
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <link rel="stylesheet" href="../style.css?v=2.0" />
+  <link rel="stylesheet" href="../style.css?v=2.1" />
 </head>
 
 <body>
@@ -63,7 +53,7 @@
     <!-- Profile Photo with Pulse Glow -->
     <section class="profile-hero">
       <div class="profile-photo-container">
-        <img src="../images/marcus-linkedin-pic.jpg" alt="Marcus Piper" class="profile-photo-pulse" />
+        <img src="../images/marcus-headshot.jpg" alt="Marcus Piper" class="profile-photo-pulse" />
       </div>
     </section>
 
@@ -183,6 +173,7 @@
         </div>
         <button type="submit" class="submit-button" id="submit-btn">Send Project Request</button>
       </form>
+      <p class="form-privacy-note">I only use what you send here to reply to you. Messages are delivered through Formspree, and I never sell or share your information. <a href="../privacy/">Privacy</a></p>
       <div id="form-success" class="form-message form-success-message" style="display: none;">
         <p>✅ Thanks! Your message was sent.</p>
       </div>
@@ -250,13 +241,13 @@
       <a href="../index.html#contact">Contact</a>
       <a href="../card/">Digital Card</a>
     </div>
-    <p class="footer-tagline">&copy; <span id="about-current-year"></span> Marcus Piper Solutions. Built in Virginia.</p>
+    <p class="footer-tagline">&copy; <span id="about-current-year"></span> Marcus Piper Solutions LLC. Serving Alexandria, Northern Virginia, and Washington, DC. &middot; <a href="../privacy/">Privacy</a></p>
   </footer>
   <script>document.getElementById('about-current-year').textContent = new Date().getFullYear();</script>
 
   <!-- Smart Interaction Card -->
   <button class="chatbot-button" id="chatbot-button"
-    onclick="document.getElementById('smart-card').classList.toggle('active');">Chat with Marcus</button>
+    onclick="document.getElementById('smart-card').classList.toggle('active');" aria-label="Chat with Marcus">Chat with Marcus</button>
 
   <div class="smart-card" id="smart-card">
     <p class="smart-card-greeting">Hey! I'm Marcus. I'm currently building digital solutions in Virginia. What's on your
