@@ -15,11 +15,10 @@
   <meta property="og:image" content="https://marcuspipersolutions.com/images/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" />
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="../style.css?v=2.2" />
+  <link rel="stylesheet" href="../style.css?v=2.3" />
   <style>
     .card-page {
       min-height: 100vh;
@@ -58,7 +57,7 @@
     }
 
     .card-header h1 {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
       font-size: 1.75rem;
       font-weight: 700;
       color: var(--accent-primary);
@@ -83,7 +82,7 @@
     }
 
     .card-section-title {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
       font-size: 0.8rem;
       font-weight: 700;
       color: var(--text-muted);
@@ -178,7 +177,7 @@
     }
 
     .card-review-box h2 {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
       font-size: 1.05rem;
       font-weight: 700;
       color: var(--text-primary);

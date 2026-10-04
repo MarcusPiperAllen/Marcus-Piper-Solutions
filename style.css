@@ -1,3 +1,41 @@
+/* === SELF-HOSTED FONTS (Oct 2026) ===
+   Served from this site so the page does not wait on Google.
+   The "Fallback" faces resize Arial to match each font, so text
+   does not jump when the real font finishes loading. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('fonts/inter-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('fonts/montserrat-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+  size-adjust: 107.12%;
+}
+
+@font-face {
+  font-family: 'Montserrat Fallback';
+  src: local('Arial');
+  ascent-override: 85.79%;
+  descent-override: 22.25%;
+  line-gap-override: 0%;
+  size-adjust: 112.83%;
+}
+
 /* ===================================
    MARCUS PIPER SOLUTIONS - LIGHT THEME
    Apple-clean cream/charcoal/emerald with dark hero accent
@@ -56,7 +94,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   background: var(--bg-primary);
@@ -116,7 +154,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.75rem;
   font-weight: 800;
   margin-bottom: 0.35rem;
@@ -204,7 +242,7 @@ nav ul li a.active {
 }
 
 .hero-banner-badge {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: #ffffff;
@@ -240,7 +278,7 @@ nav ul li a.active {
 }
 
 .hero-text-block h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: clamp(2.25rem, 4.8vw, 3.6rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -363,7 +401,7 @@ nav ul li a.active {
 
 /* === HERO TITLE CAPTION === */
 .hero-title-caption {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--accent-primary);
@@ -394,7 +432,7 @@ nav ul li a.active {
 }
 
 .about-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -444,7 +482,7 @@ nav ul li a.active {
 }
 
 .projects-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -608,7 +646,7 @@ nav ul li a.active {
 
 /* Bento Tile Content */
 .bento-tile-content h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -849,7 +887,7 @@ nav ul li a.active {
 }
 
 .project-card h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -952,7 +990,7 @@ nav ul li a.active {
 .client-testimonial blockquote p {
   margin: 0;
   color: var(--text-primary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 500;
   line-height: 1.75;
@@ -1001,7 +1039,7 @@ nav ul li a.active {
 }
 
 .media-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -1144,7 +1182,7 @@ nav ul li a.active {
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
   font-size: 1rem;
   transition: all var(--transition-normal);
 }
@@ -1699,7 +1737,7 @@ footer {
 }
 
 .about-tile h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -1798,7 +1836,7 @@ footer {
 
 .journey-content h2 {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   color: var(--text-primary);
   margin-bottom: var(--spacing-xl);
@@ -1848,7 +1886,7 @@ footer {
 }
 
 .timeline-content h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -1878,7 +1916,7 @@ footer {
 }
 
 .about-contact h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -1923,7 +1961,7 @@ figcaption {
 }
 
 .services-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -1956,7 +1994,7 @@ figcaption {
 }
 
 .service-card h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -1977,7 +2015,7 @@ figcaption {
 }
 
 .process-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -2006,7 +2044,7 @@ figcaption {
 }
 
 .process-number {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--accent-primary);
@@ -2016,7 +2054,7 @@ figcaption {
 }
 
 .process-step h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -2037,7 +2075,7 @@ figcaption {
 }
 
 .trust-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 2.5rem;
@@ -2084,7 +2122,7 @@ figcaption {
 }
 
 .trust-item h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -2110,7 +2148,7 @@ figcaption {
 }
 
 .final-cta-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.25rem;
   font-weight: 800;
   color: #ffffff;
@@ -2260,7 +2298,7 @@ figcaption {
 }
 
 .home-about-content h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.25rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -2329,7 +2367,7 @@ figcaption {
 }
 
 .home-contact h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -2406,7 +2444,7 @@ section[id],
 }
 
 .privacy-page h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', sans-serif;
   color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
@@ -2482,4 +2520,22 @@ section[id],
 .card-legal a {
   color: var(--text-muted);
   text-decoration: underline;
+}
+
+/* Phone: smaller chat bubble tucked into the corner so it never covers buttons */
+@media (max-width: 480px) {
+  .chatbot-button {
+    width: 48px;
+    height: 48px;
+    bottom: 14px;
+    right: 14px;
+  }
+
+  .chatbot-button::before {
+    font-size: 20px;
+  }
+
+  .smart-card {
+    bottom: 74px;
+  }
 }
