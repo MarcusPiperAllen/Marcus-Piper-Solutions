@@ -6,3 +6,7 @@ deploy.sh
 README.md
 package-lock.json
 attached_assets
+.claude
+.vscode
+.replit
+commit.js
